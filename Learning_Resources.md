@@ -7,3 +7,7 @@
     * Blog
     * Slack Channel
 * @magentocommeng Slack Channel
+* Swift Otter
+* Magento U
+    * Courses
+    * Free videos
