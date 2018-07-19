@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Magicento2Settings">
+    <option name="pathToMagento2Source" value="" />
+    <option name="pathToPhp" value="" />
+    <option name="urlToMagento" value="" />
+    <option name="pathToBinMagento" value="" />
+  </component>
+</project>
