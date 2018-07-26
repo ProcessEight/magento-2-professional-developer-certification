@@ -25,4 +25,3 @@ Exam topics and the percentage covered in the test:
 * Working with Databases in Magento 18%
 * Developing with Adminhtml 11%
 * Customizing Magento Business Logic 16%
-
