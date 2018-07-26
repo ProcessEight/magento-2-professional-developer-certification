@@ -23,20 +23,33 @@ To add a new module, the following steps need to be taken as a minimum:
 * Create the `registration.php` file.
 * Create the `app/code/VendorName/ModuleName/etc` folder.
 * Create the `module.xml` file inside the `etc` directory.
-* Run the `php -f bin/magento module:enable VendorName_ModuleName` command.
 * Run the `php -f bin/magento setup:upgrade` command.
 
-Source: 
+Source: https://devdocs.magento.com/videos/fundamentals/create-a-new-module/
 
 ## What are the different Composer package types?
 
-There are three composer package types:
+There are five `composer` package types:
 
-* `magento2-module`: Defines a module
-* `magento2-theme`: Defines a theme
-* `magento2-language`: Defines a translation/language pack
-* `magento2-library`: A library used in the Magento Framework
+* `magento2-module`: Defines a module. The `composer.json` file for a module extension declares external dependencies that it needs to function.
+* `magento2-theme`: Defines a theme. The `composer.json` file for a theme component contains parent theme dependencies the extension needs to inherit.
+* `magento2-language`: Defines a language pack. For language packages, you must use the correct ISO code for the language code in the `composer.json` file.
+* `magento2-library`: Defines a library. The Magento application uses this `composer.json` file for its framework packages.
+* `magento2-component` Defines a general extension that does not fit any of the other types.
+
+The extension type tells the system where to install the directories and files of each extension in the Magento directory structure.
+
+Source: https://devdocs.magento.com/guides/v2.2/extension-dev-guide/build/composer-integration.html#magento-specific-package-types
  
-Source: https://devdocs.magento.com/guides/v2.2/extension-dev-guide/build/composer-integration.html#composerjson-overview
-
 ## When would you place a module in the app/code folder versus another location?
+
+* If you had no intention of distributing it
+* You do not want to manage it by `composer` (perhaps a project-specific module)
+* If you installed Magento without using `composer` 
+
+If you build a module for a specific project, it is best to choose the app/code folder and commit to the project’s repository.
+
+If you build an extension to be reused, it is better to use composer to create it, and put your module in the vendor/<YOUR_VENDOR>/module-something folder.
+
+Source: https://devdocs.magento.com/videos/fundamentals/create-a-new-module/
+
