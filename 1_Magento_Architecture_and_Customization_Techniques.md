@@ -15,6 +15,10 @@ Describe module architecture.
 
 ## 1.2 Describe the Magento directory structure
 
+* Determine how to locate different types of files in Magento. 
+* Where are the files containing JavaScript, HTML, and PHP located? 
+* How do you find the files responsible for certain functionality?
+
 Describe the Magento directory structure. 
 * What are the naming conventions, and how are namespaces established?
 * How can you identify the files responsible for some functionality?

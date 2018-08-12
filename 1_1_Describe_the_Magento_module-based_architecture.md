@@ -8,8 +8,8 @@ Modules must comply with PSR-4. This standard declares that the namespace path w
 
 Magento will look for modules in two places:
 
-* `{{MAGENTO_BASEDIR}}/app/code/VendorName/ModuleName`
-* `{{MAGENTO_BASEDIR}}/vendor/vendor-name/module-name`
+* `<MAGENTO_BASEDIR>/app/code/VendorName/ModuleName`
+* `<MAGENTO_BASEDIR>/vendor/vendor-name/module-name`
 
 A module must have, as a bare minimum:
 
