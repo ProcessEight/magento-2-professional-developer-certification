@@ -106,6 +106,29 @@ If you build an extension to be reused, it is better to use composer to create i
 
 Source: https://devdocs.magento.com/videos/fundamentals/create-a-new-module/
 
+## Describe module limitations.
+
+Modules can be disabled using the `bin/magento module:disable` command, or by removing/renaming the `registration.php` file.
+
+A disabled module is effectively invisible to Magento.
+
+## How do different modules interact with each other?
+
+* Defining dependencies on other modules using the `sequence` node in `module.xml`
+* Defining dependencies on other packages in `composer.json`
+* Defining concrete implementations of interfaces using `Dependency Injection` in `di.xml`
+* Defining `Plugins`
+* Defining and subscribing to `Events`
+ 
+Source: Magento Digital Commerce Architecture PDF (Magento2_Architecture_Whitepaper_Final_4.pdf, author: Magento, Inc) 
+ 
+## What side effects can come from this interaction?
+
+* Only methods defined in a modules interfaces should be depended upon, otherwise the functionality may disappear in upgrades.
+* Priorities should be added to `plugins` to define when the plugin should run.
+
+Source Swift Otter Exam Study Guide (developer-study-guide-1.pdf, author: Swift Otter)
+
 ## Suggestions for further research
 
 * How does Magento know where to find modules?

@@ -1,8 +1,12 @@
 # 1. Magento Architecture and Customization Techniques
 
-This topic comprises 33% of the topics covered in the exam.
+This topic comprises 18% of the topics covered in the exam.
 
 ## 1.1 Describe the Magento module-based architecture
+
+* Describe module limitations. 
+* How do different modules interact with each other? 
+* What side effects can come from this interaction?
 
 Describe module architecture. 
 * What are the significant steps to add a new module? 
