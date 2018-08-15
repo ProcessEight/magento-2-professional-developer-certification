@@ -1,4 +1,4 @@
-# Magento 2 Associate Developer Certification
+# Magento 2 Professional Developer Certification
 
 Research to pass the Magento 2 Associate Developer Certification exam
 

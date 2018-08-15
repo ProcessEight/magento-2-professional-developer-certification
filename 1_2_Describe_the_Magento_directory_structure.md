@@ -125,6 +125,7 @@ The classes in here should be designed to 'model' an entity (eg. Product, Custom
 Logic relating to persisting data, e.g. The CRUD functions of a module is located in here, including concrete implementations of `Service interfaces`.
 
 ##### `Observer` folder
+Event listeners must implement `\Magento\Framework\Event\ObserverInterface`
 
 ##### `Plugin` folder
 

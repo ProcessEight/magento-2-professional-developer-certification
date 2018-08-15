@@ -38,4 +38,9 @@
 
 * magento-notes/magento2-exam-notes https://github.com/magento-notes/magento2-exam-notes
 * colinmurphy/magento-exam-notes https://github.com/colinmurphy/magento-exam-notes
+
+## Even more
+An even bigger list of resources than this one: 
+
+aleron75/mageres https://github.com/aleron75/mageres
     
