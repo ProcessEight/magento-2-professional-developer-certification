@@ -1,0 +1,13 @@
+<?php
+/**
+ * Copyright © ProcessEight. All rights reserved.
+ */
+/**
+ * This template adds custom column header(s).
+ * In this example, a column to display the shipping Method of the order is added.
+ * This template is rendered by the sales.order.history.extra.column.header.custom block,
+ * which is declared in htdocs/app/code/ProcessEight/CustomiseMyAccountOrderHistoryExample/view/frontend/layout/sales_order_history.xml:25
+ */
+?>
+<?php /** @var \Magento\Framework\View\Element\Template $block */ ?>
+<th scope="col" class="col shipping-method"><?= $block->escapeHtml(__('Shipping Method')) ?></th>

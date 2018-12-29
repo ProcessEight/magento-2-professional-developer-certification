@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © ProcessEight. All rights reserved.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!--
+         Extension point one: The 'info' container
+         See htdocs/vendor/magento/module-sales/view/frontend/templates/order/history.phtml:11
+         -->
+        <referenceContainer name="sales.order.history.info">
+            <!-- We are deliberately omitting the class attribute here because it defaults to \Magento\Framework\View\Element\Template anyway -->
+            <block name="sales.order.history.info.introduction"
+                   template="ProcessEight_CustomiseMyAccountOrderHistoryExample::order/history/introduction.phtml"/>
+        </referenceContainer>
+        <!--
+        These next two extension points demonstrate how to add new column(s) in a fixed position
+        (i.e. Between the 'Date' and 'Ship To' columns) in the order history grid
+        -->
+        <!--
+         Extension point two point one: The 'sales.order.history.extra.column.header' container
+         See htdocs/vendor/magento/module-sales/view/frontend/templates/order/history.phtml:20
+         -->
+        <referenceContainer name="sales.order.history.extra.column.header">
+            <block name="sales.order.history.extra.column.header.shipping_method"
+                   template="ProcessEight_CustomiseMyAccountOrderHistoryExample::order/history/columns/shipping_method_header.phtml"/>
+        </referenceContainer>
+        <!--
+         Extension point two point two: The 'sales.order.history.extra.container' block
+         See htdocs/vendor/magento/module-sales/view/frontend/templates/order/history.phtml:32
+         -->
+        <referenceBlock name="sales.order.history.extra.container">
+            <block name="sales.order.history.extra.container.shipping_method"
+                   template="ProcessEight_CustomiseMyAccountOrderHistoryExample::order/history/columns/shipping_method_data.phtml"/>
+        </referenceBlock>
+    </body>
+</page>

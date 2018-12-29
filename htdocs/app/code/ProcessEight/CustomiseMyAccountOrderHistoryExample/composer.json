@@ -1,0 +1,23 @@
+{
+    "name": "process-eight/customise-my-account-order-history-example",
+    "description": "A module to demonstrate how to customise the Order History section in 'My Account'",
+    "require": {
+        "php": "~7.1.0",
+        "magento/module-customer": "101.0.*",
+        "magento/module-sales": "101.0.*"
+    },
+    "suggest": {
+        "magento/module-customer-sample-data": "Sample Data version:100.2.*",
+        "magento/module-sales-sample-data": "Sample Data version:100.2.*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    }
+}
