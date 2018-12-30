@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * ProcessEight
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this module to newer
+ * versions in the future. If you wish to customize this module for your
+ * needs please contact ProcessEight for more information.
+ *
+ * @package     ProcessEight\AddCustomerEavAttributeExample
+ * @copyright   Copyright (c) 2017 ProcessEight
+ * @author      ProcessEight
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="ProcessEight_AddCustomerEavAttributeExample" setup_version="2.0.0">
+        <sequence>
+            <module name="Magento_Customer"/>
+        </sequence>
+    </module>
+</config>
