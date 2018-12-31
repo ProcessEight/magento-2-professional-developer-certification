@@ -9,7 +9,7 @@
  * versions in the future. If you wish to customize this module for your
  * needs please contact ProcessEight for more information.
  *
- * @package     ProcessEight\AddCustomerEavAttributeExample
+ * @package     ProcessEight\AddCustomerEavAttributeToFormsExample
  * @copyright   Copyright (c) 2017 ProcessEight
  * @author      ProcessEight
  *
@@ -17,7 +17,7 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="ProcessEight_AddCustomerEavAttributeExample" setup_version="1.0.0">
+    <module name="ProcessEight_AddCustomerEavAttributeToFormsExample" setup_version="1.0.0">
         <sequence>
             <module name="Magento_Customer"/>
             <module name="Magento_Eav"/>

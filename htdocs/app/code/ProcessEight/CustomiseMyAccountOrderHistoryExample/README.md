@@ -18,6 +18,10 @@ Tested on Magento Open Source 2.2.5.
 
 ### Extension point one: Adding content above the order grid
 
+#### Through the admin
+
+It is not possible to perform this kind of customisation through the admin.
+
 #### Custom example
 * Create a new layout file, `view/frontend/layout/sales_order_history.xml`
 * Add a new `referenceContainer` node, targeting the `sales.order.history.info` container
@@ -27,6 +31,10 @@ Tested on Magento Open Source 2.2.5.
 * No blocks in core target the `sales.order.history.info` container
 
 ### Extension point two: Adding a new column
+
+#### Through the admin
+
+It is not possible to perform this kind of customisation through the admin.
 
 #### Custom example
 * In the layout file, `view/frontend/layout/sales_order_history.xml`

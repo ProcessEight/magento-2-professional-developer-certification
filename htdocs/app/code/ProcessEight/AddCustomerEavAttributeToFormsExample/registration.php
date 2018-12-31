@@ -16,6 +16,6 @@
 
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'ProcessEight_AddCustomerEavAttributeExample',
+    'ProcessEight_AddCustomerEavAttributeToFormsExample',
     __DIR__
 );

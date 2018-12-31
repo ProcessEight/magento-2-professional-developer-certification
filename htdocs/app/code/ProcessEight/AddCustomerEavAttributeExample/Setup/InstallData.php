@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 /**
  * ProcessEight
  *
@@ -64,13 +64,13 @@ class InstallData implements InstallDataInterface
      */
     public function install(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
     {
+        $attributeCode  = 'processeight_nickname';
         /** @var \Magento\Customer\Setup\CustomerSetup $customerSetup */
         $customerSetup  = $this->customerSetupFactory->create(['setup' => $setup]);
         $customerEntity = $customerSetup->getEavConfig()->getEntityType(Customer::ENTITY);
-        $attributeCode  = 'processeight_nickname';
-        $customerSetup->removeAttribute(Customer::ENTITY, $attributeCode);
 
-        // None of these are required. If none are set, Magento will set them to safe default values
+        // None of these are required. If none are set, Magento will set them to safe default values in
+        // \Magento\Eav\Model\Entity\Setup\PropertyMapper for all entities (there are other mappers for other entities as well)
         $eavEntityCommonProperties = [
 //            'backend'         => null,
 //            'type'            => 'varchar', // static, varchar, int, text, datetime, decimal
@@ -85,9 +85,14 @@ class InstallData implements InstallDataInterface
 //            'default'         => null,
 //            'unique'          => 0,
 //            'note'            => null,
-//            'global'          => 1,
+//            'global'          => \Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface::SCOPE_GLOBAL,
+//            'position'        => 10,
+//            'group'           => 'Account Information', // Label of tab the attribute appears in
         ];
 
+        // None of these are required. If none are set, Magento will set them to safe default values in
+        // \Magento\Customer\Model\ResourceModel\Setup\PropertyMapper (for customer entities).
+        // There are other mappers for other entities as well.
         $customerEntitySpecificProperties = [
 //            'data_model'      => null,
 //            'input_filter'    => null,
@@ -96,20 +101,13 @@ class InstallData implements InstallDataInterface
 //            'system'          => 0,
 //            'validate_rules'  => null,
 //            'visible'         => 1,
-
-        ];
-
-        $visibilityProperties = [
-//            'position'        => 10,
-//            'group'           => 'Account Information', // Label of tab the attribute appears in
 //                 These options control the behaviour of the attribute in admin grids
 //            'is_used_in_grid'       => true,
 //            'is_filterable_in_grid' => true,
 //            'is_searchable_in_grid' => true,
         ];
 
-
-        $data = array_merge($eavEntityCommonProperties, $customerEntitySpecificProperties, $visibilityProperties);
+        $data = array_merge($eavEntityCommonProperties, $customerEntitySpecificProperties);
 
         $attributeSetId = $customerEntity->getDefaultAttributeSetId();
         /** @var $attributeSet \Magento\Eav\Model\Entity\Attribute\Set */
@@ -145,7 +143,7 @@ class InstallData implements InstallDataInterface
              *
              * adminhtml_customer:      The edit customer form in the admin
              * customer_account_create: The register form in the frontend
-             * customer_account_edit:   The edit account information form in the customer account area of the frontend
+             * customer_account_edit:   The edit account information form in the 'My Account' area of the frontend
              */
             'used_in_forms'         => ['adminhtml_customer', 'customer_account_create', 'customer_account_edit',],
         ]);

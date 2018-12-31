@@ -1,6 +1,6 @@
 {
-    "name": "process-eight/add-customer-eav-attribute-example",
-    "description": "A module to demonstrate how to add a new EAV attribute to the customer entity",
+    "name": "process-eight/add-customer-eav-attribute-to-forms-example",
+    "description": "A module to demonstrate how to add an EAV attribute to forms in the admin and frontend",
     "require": {
         "php": "~7.1.0",
         "magento/module-customer": "101.0.*",

@@ -21,6 +21,10 @@ Tested on Magento Open Source 2.2.5.
 
 ### Add a new menu item
 
+#### Through the admin
+
+It is not possible to perform this kind of customisation through the admin.
+
 #### Custom example
 
 To add a new menu item requires four steps:
@@ -96,6 +100,10 @@ The layout file used by the core is located at `htdocs/vendor/magento/module-cus
 
 ### Remove a menu item
 
+#### Through the admin
+
+It is not possible to perform this kind of customisation through the admin.
+
 #### Custom example
 
 * To remove a menu item, target the block using a `referenceBlock` node, then set the `remove` attribute to `true`:
@@ -135,6 +143,10 @@ The layout file used by the core is located at `htdocs/vendor/magento/module-cus
 As you can see, the same approach can also be used to remove entire containers (and, therefore, all contained blocks).
 
 ### Group the menu items into separate sections
+
+#### Through the admin
+
+It is not possible to perform this kind of customisation through the admin.
 
 #### Custom example
 
