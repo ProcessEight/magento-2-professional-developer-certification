@@ -1,52 +1,30 @@
 # ProcessEight AddCustomerEavAttributeToFormsExample
 
 ## Purpose
-A module to demonstrate how to add new EAV attributes to the Customer entity.
+A module to demonstrate how to add EAV attributes to forms in the frontend/admin.
 
 Tested on Magento Open Source 2.2.5.
 
 ## Customising the 'Customer' entity
 
-### Add a new EAV attribute
-
-The only required attribute property for a Customer attribute is `attribute_code`. 
-
-Any property not explicitly set will be automatically set to a default value before it is created.
+### Add an EAV attribute to a form
 
 Customer attributes do not need to be added to forms. Adding an attribute to a form is only necessary if it needs to be visible in the admin or on the frontend.
 
 #### Custom example
 
-See `htdocs/app/code/ProcessEight/AddCustomerEavAttributeToFormsExample/Setup/InstallData.php`
+See `htdocs/app/code/ProcessEight/AddCustomerEavAttributeToFormsExample/Setup/UpgradeData.php:88`
 
 #### Core example
 
 See `htdocs/vendor/magento/module-customer/Setup/UpgradeData.php:602`
 
-### Add EAV attributes of different types
+#### Through the admin
 
-#### Custom example
+It is not possible to edit Customer entity attributes through the admin in Magento Open Source edition.
 
-#### Core example
+### Remove an EAV attribute from a form
 
-### Adding an attribute with static options
+This works in exactly the same way as adding - just assign the form codes to the attribute, excluding any forms you don't want the attribute to be assigned to.
 
-i.e. The options are effectively hard-coded.
-
-#### Custom example
-
-#### Core example
-
-### Adding an attribute with dynamic options
-
-i.e. The quantity and value of the options is not hardcoded. Use a source model (I think). 
-
-#### Custom example
-
-#### Core example
-
-### Adding an attribute which uses custom backend/frontend/source, etc models
-
-#### Custom example
-
-#### Core example
+When Magento saves the attribute, it deletes all the records for the attribute from the `customer_form_attribute` table, then inserts new ones.
