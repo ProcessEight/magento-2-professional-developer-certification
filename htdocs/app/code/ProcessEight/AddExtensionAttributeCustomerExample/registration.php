@@ -8,7 +8,7 @@
  * versions in the future. If you wish to customize this module for your
  * needs please contact ProcessEight for more information.
  *
- * @package     ProcessEight\AddCustomerEavAttributeToFormsExample
+ * @package     ProcessEight\AddExtensionAttributeCustomerExample
  * @copyright   Copyright (c) 2019 ProcessEight
  * @author      ProcessEight
  *
@@ -16,6 +16,6 @@
 
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'ProcessEight_AddCustomerEavAttributeToFormsExample',
+    'ProcessEight_AddExtensionAttributeCustomerExample',
     __DIR__
 );

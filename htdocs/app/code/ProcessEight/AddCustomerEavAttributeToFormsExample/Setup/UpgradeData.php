@@ -9,7 +9,7 @@
  * needs please contact ProcessEight for more information.
  *
  * @package     ProcessEight\AddCustomerEavAttributeToFormsExample
- * @copyright   Copyright (c) 2017 ProcessEight
+ * @copyright   Copyright (c) 2019 ProcessEight
  * @author      ProcessEight
  *
  */
