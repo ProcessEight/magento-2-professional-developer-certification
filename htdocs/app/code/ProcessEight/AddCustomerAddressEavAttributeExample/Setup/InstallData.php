@@ -64,32 +64,34 @@ class InstallData implements InstallDataInterface
      */
     public function install(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
     {
-        $attributeCode = 'processeight_address_nickname';
         /** @var \Magento\Customer\Setup\CustomerSetup $customerSetup */
-        $customerSetup  = $this->customerSetupFactory->create(['setup' => $setup]);
+        $customerSetup = $this->customerSetupFactory->create(['setup' => $setup]);
 
         // Debugging step
-        $customerSetup->removeAttribute(AddressMetadataInterface::ENTITY_TYPE_ADDRESS, $attributeCode);
+        $customerSetup->removeAttribute(
+            AddressMetadataInterface::ENTITY_TYPE_ADDRESS,
+            \ProcessEight\AddCustomerAddressEavAttributeExample\Api\ProcesseightAddressNicknameInterface::CODE
+        );
 
         // None of these are required. If none are set, Magento will set them to safe default values in
         // \Magento\Eav\Model\Entity\Setup\PropertyMapper for all entities (there are other mappers for other entities as well)
         $eavEntityCommonProperties = [
-            'label'          => 'Address Nickname',
-            'note'           => 'Enter a nickname so you can easily identify this address later, e.g. Home, Work, etc.',
-            'required'       => 0,
-//            'backend'        => null,
-//            'type'           => 'varchar', // static, varchar, int, text, datetime, decimal
-//            'table'          => null,
-//            'frontend'       => null,
-//            'input'          => 'text', // select, text, date, hidden, boolean, multiline, textarea, image, multiselect, price, weight, media_image, gallery
-//            'frontend_class' => null,
-//            'source'         => null,
-//            'user_defined'   => 1,
-//            'default'        => null,
-//            'unique'         => 0,
-//            'global'         => \Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface::SCOPE_GLOBAL,
-//            'position'       => 10,
-//            'group'          => 'Account Information', // Label of tab the attribute appears in
+            'label'    => \ProcessEight\AddCustomerAddressEavAttributeExample\Api\ProcesseightAddressNicknameInterface::LABEL,
+            'note'     => 'Enter a nickname so you can easily identify this address later, e.g. Home, Work, etc.',
+            'required' => 0,
+            //            'backend'        => null,
+            //            'type'           => 'varchar', // static, varchar, int, text, datetime, decimal
+            //            'table'          => null,
+            //            'frontend'       => null,
+            //            'input'          => 'text', // select, text, date, hidden, boolean, multiline, textarea, image, multiselect, price, weight, media_image, gallery
+            //            'frontend_class' => null,
+            //            'source'         => null,
+            //            'user_defined'   => 1,
+            //            'default'        => null,
+            //            'unique'         => 0,
+            //            'global'         => \Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface::SCOPE_GLOBAL,
+            //            'position'       => 10,
+            //            'group'          => 'Account Information', // Label of tab the attribute appears in
         ];
 
         // Only 'system' is required. If none of the others are set, Magento will set them to safe default values in
@@ -99,21 +101,25 @@ class InstallData implements InstallDataInterface
         // The customer_address entity shares this table with the customer entity
         $customerAddressEntitySpecificProperties = [
             'system' => 0, // Required
-//            'data_model'      => null,
-//            'input_filter'    => null,
-//            'multiline_count' => 0,
-//            'sort_order'      => 10,
-//            'validate_rules'  => null,
-//            'visible'         => 1,
-//            These options control the behaviour of the attribute in admin grids
-//            'is_used_in_grid'       => true,
-//            'is_filterable_in_grid' => true,
-//            'is_searchable_in_grid' => true,
+            //            'data_model'      => null,
+            //            'input_filter'    => null,
+            //            'multiline_count' => 0,
+            //            'sort_order'      => 10,
+            //            'validate_rules'  => null,
+            //            'visible'         => 1,
+            //            These options control the behaviour of the attribute in admin grids
+            //            'is_used_in_grid'       => true,
+            //            'is_filterable_in_grid' => true,
+            //            'is_searchable_in_grid' => true,
         ];
 
         $data = array_merge($eavEntityCommonProperties, $customerAddressEntitySpecificProperties);
 
-        $customerSetup->addAttribute(AddressMetadataInterface::ENTITY_TYPE_ADDRESS, $attributeCode, $data);
+        $customerSetup->addAttribute(
+            AddressMetadataInterface::ENTITY_TYPE_ADDRESS,
+            \ProcessEight\AddCustomerAddressEavAttributeExample\Api\ProcesseightAddressNicknameInterface::CODE,
+            $data
+        );
 
         /*
          *  Note you only need to worry about form codes if the customer attribute is_system == 0 and is_visible == 1
@@ -136,7 +142,7 @@ class InstallData implements InstallDataInterface
 
         $customerAttribute = $customerSetup->getEavConfig()->getAttribute(
             \Magento\Customer\Api\AddressMetadataInterface::ENTITY_TYPE_ADDRESS,
-            $attributeCode
+            \ProcessEight\AddCustomerAddressEavAttributeExample\Api\ProcesseightAddressNicknameInterface::CODE
         );
         $customerAttribute->addData([
             /*
@@ -146,7 +152,7 @@ class InstallData implements InstallDataInterface
              * customer_register_address:   The register form in the frontend
              * customer_address_edit:       The edit account information form in the 'My Account' area of the frontend
              */
-            'used_in_forms'      => [
+            'used_in_forms' => [
                 'adminhtml_customer_address',
                 'customer_register_address',
                 'customer_address_edit',

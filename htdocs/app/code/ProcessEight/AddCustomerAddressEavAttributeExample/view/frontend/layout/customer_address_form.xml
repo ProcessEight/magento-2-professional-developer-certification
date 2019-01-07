@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="customer_account"/>
+    <body>
+        <referenceBlock name="customer_address_edit">
+            <container name="form.additional.info" as="form_additional_info"/>
+        </referenceBlock>
+        <referenceContainer name="form.additional.info">
+            <block template="ProcessEight_AddCustomerAddressEavAttributeExample::customattributes.phtml" name="customer_form_user_attributes" cacheable="false">
+                <action method="setFormCode">
+                    <argument name="code" xsi:type="string">customer_account_edit</argument>
+                </action>
+                <action method="setEntityModelClass">
+                    <argument name="code" xsi:type="string">Magento\Customer\Model\Customer</argument>
+                </action>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
