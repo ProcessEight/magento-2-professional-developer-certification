@@ -1,21 +1,17 @@
 <?php
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-// @codingStandardsIgnoreFile
 
 /** @var \Magento\Customer\Block\Address\Edit $block */
+
+use ProcessEight\AddCustomerAddressEavAttributeExample\Api\ProcesseightAddressNicknameInterface;
 ?>
-<div class="field <?= \ProcessEight\AddCustomerAddressEavAttributeExample\Api\ProcesseightAddressNicknameInterface::CODE ?>> ">
-    <label class="label" for="<?= \ProcessEight\AddCustomerAddressEavAttributeExample\Api\ProcesseightAddressNicknameInterface::CODE ?>"><span><?= $block->escapeHtml(__(\ProcessEight\AddCustomerAddressEavAttributeExample\Api\ProcesseightAddressNicknameInterface::LABEL)) ?></span></label>
+<div class="field <?= ProcesseightAddressNicknameInterface::CODE ?>> ">
+    <label class="label" for="<?= ProcesseightAddressNicknameInterface::CODE ?>"><span><?= $block->escapeHtml(__(ProcesseightAddressNicknameInterface::LABEL)) ?></span></label>
     <div class="control">
         <input type="text"
-               name="<?= \ProcessEight\AddCustomerAddressEavAttributeExample\Api\ProcesseightAddressNicknameInterface::CODE ?>"
+               name="<?= ProcesseightAddressNicknameInterface::CODE ?>"
                value="<?= $block->escapeHtmlAttr($block->getAddress()->getCity()) ?>"
-               title="<?= $block->escapeHtmlAttr(__(\ProcessEight\AddCustomerAddressEavAttributeExample\Api\ProcesseightAddressNicknameInterface::LABEL)) ?>"
-               class="input-text <?= $block->escapeHtmlAttr($this->helper('Magento\Customer\Helper\Address')->getAttributeValidationClass(\ProcessEight\AddCustomerAddressEavAttributeExample\Api\ProcesseightAddressNicknameInterface::CODE)) ?>"
-               id="<?= \ProcessEight\AddCustomerAddressEavAttributeExample\Api\ProcesseightAddressNicknameInterface::CODE ?>>">
+               title="<?= $block->escapeHtmlAttr(__(ProcesseightAddressNicknameInterface::LABEL)) ?>"
+               class="input-text <?= $block->escapeHtmlAttr($this->helper('Magento\Customer\Helper\Address')->getAttributeValidationClass(ProcesseightAddressNicknameInterface::CODE)) ?>"
+               id="<?= ProcesseightAddressNicknameInterface::CODE ?>>">
     </div>
 </div>
