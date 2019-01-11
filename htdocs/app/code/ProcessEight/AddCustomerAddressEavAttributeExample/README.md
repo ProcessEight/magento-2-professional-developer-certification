@@ -1,4 +1,4 @@
-# ProcessEight AddCustomerEavAttributeExample
+# ProcessEight AddCustomerAddressEavAttributeExample
 
 ## Purpose
 A module to demonstrate how to add new EAV attributes to the Customer Address entity.
