@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Process Eight. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="processeight_addcustomadminhtmlrouterexample"
+               frontName="addcustomadminhtmlrouterexample"><!-- @todo Can frontName attributes contain underscores or dashes? Hint: htdocs/vendor/magento/framework/App/Test/Unit/Config/_files/invalidRoutesXmlArray.php:8 -->
+            <module name="ProcessEight_AddCustomAdminhtmlRouterExample"
+                    before="Magento_Backend"/>
+        </route>
+    </router>
+</config>

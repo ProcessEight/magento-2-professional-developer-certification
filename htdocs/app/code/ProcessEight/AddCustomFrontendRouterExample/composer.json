@@ -1,0 +1,24 @@
+{
+    "name": "processeight/module-add-custom-frontend-router-example",
+    "description": "An example module demonstrating how to create a custom frontend router in Magento 2",
+    "type": "magento2-module",
+    "license": [
+        "proprietary"
+    ],
+    "authors":[
+        {
+            "name":"Process Eight",
+            "email":"Add your email address here"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "ProcessEight\\AddCustomFrontendRouterExample\\": ""
+        }
+    }
+}
