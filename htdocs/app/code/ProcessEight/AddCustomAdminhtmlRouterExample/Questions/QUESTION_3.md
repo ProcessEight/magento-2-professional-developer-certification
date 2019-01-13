@@ -24,9 +24,6 @@ CORRECT: Magento will instantiate the class defined in the `instance` attribute 
 #### Run the bin/magento event:listen sales_order_place_after CLI command.
 INCORRECT: This is the red herring answer. There is no such command. There is no need to execute any CLI command to add a new Event Observer. 
 
-### Explanation
-
-
 ## Disclaimer
 This module is intended as a learning aid only and is not intended for use in production systems.
 
