@@ -5,9 +5,9 @@ Tested on Magento 2.2.5.
 ### Question
 What are two ways to install a module in Magento?
 
-Choose two.
-
 ### Answers
+
+Choose two.
 
 #### Use the Web Setup Wizard.
 
