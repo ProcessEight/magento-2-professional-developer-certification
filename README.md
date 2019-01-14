@@ -28,6 +28,10 @@ Exam topics and the percentage covered in the exam:
 * Developing with Adminhtml: 11%
 * Customizing Magento Business Logic: 16%
 
+## Resources
+
+https://gist.github.com/ProcessEight/3dbb240bfc83c8f5cfa823f1a69b6acd
+
 # Magento 2 Professional Developer Certification
 
 ## Introduction
