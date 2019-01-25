@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Process Eight. All rights reserved.
+ */
+-->
+<route id="mymodule" frontName="functionality">
+    <module name="MyCompany_MyModule" before="Magento_Backend" />
+</route>

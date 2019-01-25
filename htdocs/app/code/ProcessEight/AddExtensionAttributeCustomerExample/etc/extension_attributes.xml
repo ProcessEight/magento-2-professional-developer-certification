@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * ProcessEight
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this module to newer
+ * versions in the future. If you wish to customize this module for your
+ * needs please contact ProcessEight for more information.
+ *
+ * @package     ProcessEight\AddExtensionAttributeCustomerExample
+ * @copyright   Copyright (c) 2019 ProcessEight
+ * @author      ProcessEight
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Api/etc/extension_attributes.xsd">
+    <extension_attributes for="Magento\Customer\Api\Data\CustomerInterface">
+        <!-- The attribute type can be a scalar type, or a complex type like array or a class name -->
+        <attribute code="processeight_customer_note" type="string"/>
+    </extension_attributes>
+</config>

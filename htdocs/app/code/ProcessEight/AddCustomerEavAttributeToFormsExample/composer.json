@@ -1,0 +1,22 @@
+{
+    "name": "process-eight/add-customer-eav-attribute-to-forms-example",
+    "description": "A module to demonstrate how to add an EAV attribute to forms in the admin and frontend",
+    "require": {
+        "php": "~7.1.0",
+        "magento/module-customer": "101.0.*",
+        "magento/module-eav": "101.0.*"
+    },
+    "suggest": {
+        "magento/module-customer-sample-data": "Sample Data version:100.2.*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    }
+}
