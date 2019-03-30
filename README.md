@@ -81,7 +81,7 @@ Work through Swift Otter (and other learning resources) in this order:
 * (PDF) MAGENTO 2 CERTIFIED PROFESSIONAL DEVELOPER EXAM PREPARATION EBOOK: Swift, Joseph. Swift Otter.
     * Location: 
         * UKFast cloud-shaped USB key drive: `/HAR/Magento/2/Training`,
-        * zeon8-aurora: `/data/hydrogen/magento-resources/magento-2/documentation/certification/swift-otter/Magento 2 Certified Professional Developer Study Guide` 
+        * zone8-aurora: `/data/hydrogen/magento-resources/magento-2/documentation/certification/swift-otter/Magento 2 Certified Professional Developer Study Guide` 
  
 * (PDF) MagentoU - Magento 2 Certified Associate Developer Exam Study Guide: Magento.
     * Locations: 
