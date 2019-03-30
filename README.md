@@ -98,6 +98,10 @@ Work through Swift Otter (and other learning resources) in this order:
 
 ### Gists
 
+Becoming Certified by Vinai Kopp
+
+https://gist.github.com/ProcessEight/91bb00ac508ffe978bc0f309fae3f51f#becoming-certified-by-vinai-kopp
+
 Fundamentals of Magento 2 Development (v2.1): Unit One: Magento 2 Platform and architecture (With notes explaining what has changed in Magento 2.2.0)
 
 https://gist.github.com/ProcessEight/f51886fe5aa2ff7761c697e5b401cf72
