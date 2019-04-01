@@ -9,20 +9,24 @@ Choose one.
 
 #### page.wrapper
 
-INCORRECT: 
+INCORRECT: Almost correct. `page.wrapper` contains `main.content`, which in turn contains the `columns` container.
 
 #### main.content
 
-CORRECT: 
+CORRECT: `main.content` contains the `columns` container.
 
 #### main
 
-INCORRECT: 
+INCORRECT: Almost correct. `main` is contained by the `columns` container.
 
 #### columns.wrapper
 
-INCORRECT: 
+INCORRECT: Whilst it sounds obvious, there is no such container by the name `columns.wrapper` in the core codebase.
 
 ### Further notes
 
-Tested on Magento 2.2.5.
+All the default frontend `page_layout`s (`frontend/page_layout/1column.xml`,`frontend/page_layout/2columns-left.xml`, `frontend/page_layout/2columns-right.xml`, `frontend/page_layout/3columns.xml`) use the `update` Layout XML instruction to 'include' the base `page_layout` in `base/page_layout/empty.xml`. It is `empty.xml` which contains the single reference to the `columns` container.
+
+The adminhtml `page_layout`s do not use the `base/page_layout/empty.xml` file at all.
+
+_Tested on Magento 2.2.5._
