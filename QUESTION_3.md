@@ -25,7 +25,7 @@ CORRECT: This is the second part of the correct answer. Defining the `backend_mo
 
 ### Example
 
-This example in the `module-dhl` adds a password field to the system config:
+This example in `vendor/magento/module-dhl/etc/adminhtml/system.xml` adds a password field to the system config:
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
