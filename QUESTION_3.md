@@ -1,5 +1,3 @@
-Tested on Magento 2.2.5.
-
 ## Exam
 
 ### Question
@@ -39,7 +37,9 @@ This example in the `module-dhl` adds a password field to the system config:
                     <label>Password</label>
                     <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
                 </field>
-              ```
+```
+
+Tested on Magento 2.2.5.
 
 ## Copyright
 &copy; 2019 ProcessEight
