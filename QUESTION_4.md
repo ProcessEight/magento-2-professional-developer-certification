@@ -1,5 +1,3 @@
-Tested on Magento 2.2.5.
-
 ## Exam
 
 ### Question
@@ -27,8 +25,11 @@ INCORRECT:
 
 ### Further notes
 
-## Disclaimer
-This module is intended as a learning aid only and is not intended for use in production systems.
+#### Example: Generating a URL in the backend
+
+#### Example: Generating a URL in the frontend
+
+Tested on Magento 2.2.5.
 
 ## Copyright
 &copy; 2019 ProcessEight
