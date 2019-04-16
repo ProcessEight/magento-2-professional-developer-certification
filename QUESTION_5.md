@@ -1,5 +1,3 @@
-Tested on Magento 2.2.5.
-
 ## Exam
 
 ### Question
@@ -28,10 +26,25 @@ INCORRECT:
 
 INCORRECT:  
 
+### Example from core
+To do
+
+### Custom example
+To do
+
 ### Further notes
+If any
+
+### Points for further investigation
+- What are the other kind of price types?
+- What kinds of criteria affect the price rendering process (e.g. Taxes, discounts, etc)?
+- Aside from `product.price.render.default`, what other price render blocks are there? How are they rendered?
+- Are the results of price calculation triggered by the `render` method cached anywhere?
 
 ## Disclaimer
 This module is intended as a learning aid only and is not intended for use in production systems.
+
+_Tested on Magento 2.2.5._
 
 ## Copyright
 &copy; 2019 ProcessEight

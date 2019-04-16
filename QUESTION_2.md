@@ -23,6 +23,16 @@ INCORRECT: Repositories are not part of the 'model triad'. Technically speaking,
 
 INCORRECT: This approach has been deprecated. Entities _must not_ be responsible for their own persistence. Service contracts should persist entities. Use resource model `save` to implement service contract persistence operations.
 
+### Example from core
+To do
+
+### Custom example
+To do
+
 ### Further notes
 
-Tested on Magento 2.2.5.
+### Points for further investigation
+
+- Create an example module for the right answer
+
+_Tested on Magento 2.2.5._

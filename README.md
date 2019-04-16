@@ -41,12 +41,19 @@ Exam topics and the percentage covered in the exam:
 
 * Noting which areas you are weakest on
 * Go through each question which you got wrong and research why. Grok the right answer.
+* Repeat the Swift Otter exam every week, to gauge your process (but if you notice yourself memorising the right answers, do it more infrequently).
 
-### Swift Otter Exam Preparation ebook
+### Work through the Swift Otter Exam Preparation ebook
 
 * Work through the guide, prioritising areas you are weakest on (from the mock exam) and also areas which have the highest proportion of questions (according to the official Magento Study Guide).
 * Review Swift Otter guide for each of these sections
 * Review notes for matching section in https://github.com/magento-notes/magento2-exam-notes
+* Consult the DevDocs before and during EVERY topic below
+* Consult the core for examples of each topic below
+* Making your best effort to understand the what/where/when/why/how of the core codebase to understand the effects that your code will have, e.g.
+    * What options are there in the config which can affect the logic?
+    * How can you customise the operation of the logic?
+* Document everything in your own DevDocs - build up your own archive of documentation. Perhaps we could even sell it/use it as a base for a book at some point.
 * Produce example module demonstrating how to achieve points in section
   * Include examples of how to achieve said functionality:
     * Programmatically; Either via a command or using an install script
@@ -54,6 +61,7 @@ Exam topics and the percentage covered in the exam:
 * Add points for further research to [Magento Research Topics](https://github.com/ProcessEight/hydrogen/projects/8) project
 
 ### Then
+
 * Work through lower-priority areas of study guide using framework above
 * Work through tasks in [Certification](https://github.com/ProcessEight/hydrogen/projects/3) project
 
@@ -158,6 +166,10 @@ https://github.com/magento-notes/magento2-exam-notes
 * netz98: 
     * „Magento 2 Certified Professional Developer“: Profi-Tipps zur Zertifizierung (de_DE) https://www.netz98.de/blog/magento-howto/profi-tipps-zur-zertifizierung-magento-2-certified-professional-developer/
     * Infos zur Zertifizierung zum Magento 2 Certified Professional Developer (de_DE) https://www.netz98.de/magento/magento-2-certified-professional-developer/   
+* BelVG:
+    * Links to detailed articles expanding on points from the official study guide: https://belvg.com/blog/plus-two-magento-2-certified-professional-developer-at-belvg.html#step_7
+* Mage Module:
+    * A suprisingly insightful article discussing the methodology of preparing for the exam (especially the 'Specific things I did to prepare' section): https://www.magemodule.com/all-things-magento/professional-life/magento-2-certified-professional-developer-plus/
 
 ### Videos
 
