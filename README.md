@@ -1,5 +1,7 @@
 # Magento 2 Professional Developer Certification
 
+**Note that the Magento version included in this project (2.2.5) is broken and cannot be upgraded to 2.3.1. Therefore, use a separate installation of Magento 2.3.1 instead.**
+
 ## Introduction
 
 The Magento 2 Certified Professional Developer exam is designed to validate the skills and knowledge needed to customize Magento 2 in the areas of: 
@@ -41,7 +43,7 @@ Exam topics and the percentage covered in the exam:
 
 * Noting which areas you are weakest on
 * Go through each question which you got wrong and research why. Grok the right answer.
-* Repeat the Swift Otter exam every week, to gauge your process (but if you notice yourself memorising the right answers, do it more infrequently).
+* Repeat the Swift Otter exam every week, to gauge your progress (but if you notice yourself memorising the right answers, do it more infrequently).
 
 ### Work through the Swift Otter Exam Preparation ebook
 
@@ -69,18 +71,19 @@ Exam topics and the percentage covered in the exam:
 
 Work through Swift Otter (and other learning resources) in this order:
 
-| Topic  | Proportion of Questions  | Swift Otter Mock Exam Score  |
-|---|---|---|
-| Request Flow Processing | 12% | 50% | 
-| Developing with Adminhtml | 10% | 50%  | 
-| Working with Databases in Magento | 7% | 50%  | 
-| Customer Management | 5% | 50%  | 
-| Using the Entity-Attribute-Value (EAV) Model | 8% | 66.67%  | 
-| Customizing the Catalog | 12% | 75%  | 
-| Magento Architecture and Customization Techniques | 18% | 87.5% | 
-| Customizing the Magento UI | 10% | 87.5%  | 
-| Customizing the Checkout Process | 13% | 100%  | 
-| Sales Operations | 5% | 100%  | 
+| Topic  | Proportion of Questions  | Swift Otter Mock Exam Score  | Swift Otter Mock Exam Score (2019-04-27) | 
+|---|---|---|---|
+| Overall | 100% | ?? | 80% |
+| Request Flow Processing | 12% | 50% | 40% |
+| Developing with Adminhtml | 10% | 50%  | 25% |
+| Working with Databases in Magento | 7% | 50%  | 27.78%
+| Customer Management | 5% | 50%  | 41.67% |
+| Using the Entity-Attribute-Value (EAV) Model | 8% | 66.67%  | 55.56% | 
+| Customizing the Catalog | 12% | 75%  | 41.67% |
+| Magento Architecture and Customization Techniques | 18% | 87.5% | 43.96% | 
+| Customizing the Magento UI | 10% | 87.5%  | 33.33% |
+| Customizing the Checkout Process | 13% | 100%  | 25% |
+| Sales Operations | 5% | 100%  | 50% |
 
 ## Resources
 
