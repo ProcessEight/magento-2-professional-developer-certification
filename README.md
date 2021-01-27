@@ -71,19 +71,20 @@ Exam topics and the percentage covered in the exam:
 
 Work through Swift Otter (and other learning resources) in this order:
 
-| Topic  | Proportion of Questions  | Swift Otter Mock Exam Score  | Swift Otter Mock Exam Score (2019-04-27) | 
-|---|---|---|---|
-| Overall | 100% | ?? | 80% |
-| Request Flow Processing | 12% | 50% | 40% |
-| Developing with Adminhtml | 10% | 50%  | 25% |
-| Working with Databases in Magento | 7% | 50%  | 27.78%
-| Customer Management | 5% | 50%  | 41.67% |
-| Using the Entity-Attribute-Value (EAV) Model | 8% | 66.67%  | 55.56% | 
-| Customizing the Catalog | 12% | 75%  | 41.67% |
-| Magento Architecture and Customization Techniques | 18% | 87.5% | 43.96% | 
-| Customizing the Magento UI | 10% | 87.5%  | 33.33% |
-| Customizing the Checkout Process | 13% | 100%  | 25% |
-| Sales Operations | 5% | 100%  | 50% |
+| Topic  | Proportion of Questions  | Associate Developer Exam | Swift Otter Mock Exam Score  | Swift Otter Mock Exam Score (2019-04-27) | 
+|---|---|---|---|---|
+| Overall | 100% | 88.52% | ?? | 80% |
+| Request Flow Processing | 12% | 75% | 50% | 40% |
+| Developing with Adminhtml | 10% | 85.71% | 50%  | 25% |
+| Working with Databases in Magento | 7% | 90.90% | 50%  | 27.78%
+| Customer Management | 5% | N/A | 50%  | 41.67% |
+| Using the Entity-Attribute-Value (EAV) Model | 8% | N/A | 66.67%  | 55.56% | 
+| Customizing the Catalog | 12% | N/A | 75%  | 41.67% |
+| Magento Architecture and Customization Techniques | 18% | 95.00% | 87.5% | 43.96% | 
+| Customizing the Magento UI | 10% | 66.66% | 87.5% | 33.33% |
+| Customizing the Checkout Process | 13% | N/A | 100%  | 25% |
+| Sales Operations | 5% | N/A | 100%  | 50% |
+| Customising Magento Business Logic | N/A | 100.00% | N/A  | N/A |
 
 ## Resources
 
@@ -102,6 +103,9 @@ Work through Swift Otter (and other learning resources) in this order:
 ### Magento.com
 
 * Magento U Courses (past and present)
+    * Magento Certification Moderator Kit (For M1, but could still be useful in M2): `/data/hydrogen/magento-resources/magento-1/documentation/training/magento-u/Magento Certification/Magento Moderators Kit/magento-moderators-kit`
+    * Magento Developer Certification Prep Study Group Participant Guide v. 1.2: `file:///data/hydrogen/magento-resources/magento-1/documentation/training/magento-u/Magento Certification/Magento Moderators Kit/magento-moderators-kit/MDC_Prep_Study_Group_Participant_Guide_v1.2.pdf`
+    * Fundamentals of Magento 2 Development v2.1 Exercises & Solutions Guide: `file:///data/hydrogen/magento-resources/magento-2/documentation/training/magento-u/Fundamentals of Magento 2 Development v2.1/FMDv2.1_AllUnits_ExercisesAndSolutions_20170915.pdf`
 * Magento U Free videos
 * Continuous Learning as a Developer https://community.magento.com/t5/Magento-DevBlog/Continuous-Learning-as-a-Developer/ba-p/94044
 * DevDocs: http://devdocs.magento.com/
