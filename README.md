@@ -1,24 +1,29 @@
-# Magento 2 Professional Developer Certification
+# Magento 2 Expert (formerly Professional) Developer Certification
 
 **Note that the Magento version included in this project (2.2.5) is broken and cannot be upgraded to 2.3.1. Therefore, use a separate installation of Magento 2.3.1 instead.**
 
 ## Introduction
 
-The Magento 2 Certified Professional Developer exam is designed to validate the skills and knowledge needed to customize Magento 2 in the areas of: 
-* UI modifications, 
-* database changes, 
-* admin modifications, 
-* checkout process customizations, 
-* order management integrations and customizations, 
-* catalog structure and functionality changes. 
+This exam is for a Magento 2 developer with a recommended experience level of 1.5 years in customizing different areas of the Magento platform. By passing this exam the developer earns a Magento 2 Certified Expert (formerly Professional) Developer
+certification.
 
-This exam is for a Magento 2 developer who has a deep understanding of Magento 2 development concepts and experience (recommend 1.5 years) in implementing and customizing Magento 2.
+This exam validates the skills and knowledge needed to customize Magento 2 in the areas of 
+- UI modifications; 
+- database changes; 
+- admin modifications; 
+- checkout process customizations; 
+- order management integrations and customizations; and
+- catalog structure and functionality changes.
+
+The test is built for version 2.3.x of Magento Commerce and Magento Open Source.
+
+This exam consists primarily of scenario-based questions in a multiple-choice format.
 
 ## Rubric
 
 * 60 Multiple Choice items
-* 90 minutes to complete the exam
-* A score of 64% or higher is needed to pass the Magento 2 Certified Professional Developer exam
+* 120 minutes to complete the exam
+* A score of 68% or higher is needed to pass the Magento 2 Certified Expert (formerly Professional) Developer exam
 * This exam consists primarily of scenario-based questions in a multiple-choice format.
 * Based on Magento Open Source (2.3) and Magento Commerce (2.3), but applicable to those using any version of Magento 2.
 
@@ -43,7 +48,25 @@ Exam topics and the percentage covered in the exam:
 
 * Noting which areas you are weakest on
 * Go through each question which you got wrong and research why. Grok the right answer.
-* Repeat the Swift Otter exam every week, to gauge your progress (but if you notice yourself memorising the right answers, do it more infrequently).
+* Repeat the Swift Otter exam every month, to gauge your progress (but if you notice yourself memorising the right answers, do it more infrequently).
+
+## Swift Otter Mock Exam scores
+
+Work through Swift Otter (and other learning resources) in this order:
+
+| Topic                                             | Proportion of Questions | 2021-01-11                  | 2021-02-10 | 2021-03-03 |
+|---------------------------------------------------|-------------------------|-----------------------------|------------|------------|
+| Overall                                           | 100%                    | 75% (45% chance of passing) | 66% (47%)  |            |
+| Customizing the Catalog                           | 12%                     | 69%                         | 37.5%      |            |
+| Customizing the Checkout Process                  | 13%                     | 75%                         | 25%        |            |
+| Working with Databases in Magento                 | 7%                      | 67%                         | 61.11%     |            |
+| Request Flow Processing                           | 12%                     | 70%                         | 70%        |            |
+| Magento Architecture and Customization Techniques | 18%                     | 100%                        | 75%        |            |
+| Customizing the Magento UI                        | 10%                     | 100%                        | 83.33%     |            |
+| Customer Management                               | 5%                      | 100%                        | 83.33%     |            |
+| Developing with Adminhtml                         | 10%                     | 69%                         | 91.67%     |            |
+| Using the Entity-Attribute-Value (EAV) Model      | 8%                      | 50%                         | 100%       |            |
+| Sales Operations                                  | 5%                      | 100%                        | 100%       |            |
 
 ### Work through the Swift Otter Exam Preparation ebook
 
@@ -52,13 +75,18 @@ Exam topics and the percentage covered in the exam:
 * Review notes for matching section in https://github.com/magento-notes/magento2-exam-notes
 * Consult the DevDocs before and during EVERY topic below
 * Consult the core for examples of each topic below
-* Making your best effort to understand the what/where/when/why/how of the core codebase to understand the effects that your code will have, e.g.
+* Make your best effort to understand the 'what/where/when/why/how' of the core codebase to understand the effects that your code will have, e.g.
     * What options are there in the config which can affect the logic?
     * How can you customise the operation of the logic?
+      * Events
+      * Plugins
+      * `di.xml` (preferences)
+      * `di.xml` (virtual types)
+      * `di.xml` (argument injection)
 * Document everything in your own DevDocs - build up your own archive of documentation. Perhaps we could even sell it/use it as a base for a book at some point.
 * Produce example module demonstrating how to achieve points in section
   * Include examples of how to achieve said functionality:
-    * Programmatically; Either via a command or using an install script
+    * Programmatically; Either via a command or using a resource script
     * Manually; via the admin
 * Add points for further research to [Magento Research Topics](https://github.com/ProcessEight/hydrogen/projects/8) project
 
@@ -66,25 +94,6 @@ Exam topics and the percentage covered in the exam:
 
 * Work through lower-priority areas of study guide using framework above
 * Work through tasks in [Certification](https://github.com/ProcessEight/hydrogen/projects/3) project
-
-## Topics
-
-Work through Swift Otter (and other learning resources) in this order:
-
-| Topic  | Proportion of Questions  | Associate Developer Exam | Swift Otter Mock Exam Score  | Swift Otter Mock Exam Score (2019-04-27) | 
-|---|---|---|---|---|
-| Overall | 100% | 88.52% | ?? | 80% |
-| Request Flow Processing | 12% | 75% | 50% | 40% |
-| Developing with Adminhtml | 10% | 85.71% | 50%  | 25% |
-| Working with Databases in Magento | 7% | 90.90% | 50%  | 27.78%
-| Customer Management | 5% | N/A | 50%  | 41.67% |
-| Using the Entity-Attribute-Value (EAV) Model | 8% | N/A | 66.67%  | 55.56% | 
-| Customizing the Catalog | 12% | N/A | 75%  | 41.67% |
-| Magento Architecture and Customization Techniques | 18% | 95.00% | 87.5% | 43.96% | 
-| Customizing the Magento UI | 10% | 66.66% | 87.5% | 33.33% |
-| Customizing the Checkout Process | 13% | N/A | 100%  | 25% |
-| Sales Operations | 5% | N/A | 100%  | 50% |
-| Customising Magento Business Logic | N/A | 100.00% | N/A  | N/A |
 
 ## Resources
 
@@ -159,7 +168,7 @@ Magento 2 study guides in Markdown format
 
 https://github.com/df2k2/m2cert
 
-Magento 2 Certified Professional Developer notes
+Magento 2 Certified Expert (formerly Professional) Developer notes
 
 https://github.com/magento-notes/magento2-exam-notes
 
@@ -184,6 +193,8 @@ https://github.com/magento-notes/magento2-exam-notes
 * Nomad Mage
 * Mage2.tv
 * Mage2Katas
+* M.Academy
+* Swift Otter video courses
 
 ### Other Resource Lists
 
