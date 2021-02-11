@@ -1,6 +1,6 @@
 # Magento 2 Expert (formerly Professional) Developer Certification
 
-**Note that the Magento version included in this project (2.2.5) is broken and cannot be upgraded to 2.3.1. Therefore, use a separate installation of Magento 2.3.1 instead.**
+**Note that the Magento version included in this project (2.2.5) is broken and cannot be upgraded. Therefore, use a separate installation of Magento 2.3.x instead.**
 
 ## Introduction
 
@@ -15,10 +15,6 @@ This exam validates the skills and knowledge needed to customize Magento 2 in th
 - order management integrations and customizations; and
 - catalog structure and functionality changes.
 
-The test is built for version 2.3.x of Magento Commerce and Magento Open Source.
-
-This exam consists primarily of scenario-based questions in a multiple-choice format.
-
 ## Rubric
 
 * 60 Multiple Choice items
@@ -27,30 +23,14 @@ This exam consists primarily of scenario-based questions in a multiple-choice fo
 * This exam consists primarily of scenario-based questions in a multiple-choice format.
 * Based on Magento Open Source (2.3) and Magento Commerce (2.3), but applicable to those using any version of Magento 2.
 
-## Exam topics
-
-Exam topics and the percentage covered in the exam:
-
-* Magento Architecture & Customization Techniques 18%
-* Request Flow Processing 12%
-* Customizing the Magento UI 10%
-* Working with Databases in Magento 7%
-* Using the Entity-Attribute-Value (EAV) Model 8%
-* Developing with Adminhtml 10%
-* Customizing the Catalog 12%
-* Customizing the Checkout Process 13%
-* Sales Operations 5%
-* Customer Management 5%
-
 ## Study plan
 
 ### Do the Swift Otter mock exam
 
 * Noting which areas you are weakest on
-* Go through each question which you got wrong and research why. Grok the right answer.
 * Repeat the Swift Otter exam every month, to gauge your progress (but if you notice yourself memorising the right answers, do it more infrequently).
 
-## Swift Otter Mock Exam scores
+#### Swift Otter Mock Exam scores
 
 Work through Swift Otter (and other learning resources) in this order:
 
@@ -68,7 +48,7 @@ Work through Swift Otter (and other learning resources) in this order:
 | Using the Entity-Attribute-Value (EAV) Model      | 8%                      | 50%                         | 100%       |            |
 | Sales Operations                                  | 5%                      | 100%                        | 100%       |            |
 
-### Work through the Swift Otter Exam Preparation ebook
+### Study framework
 
 * Work through the guide, prioritising areas you are weakest on (from the mock exam) and also areas which have the highest proportion of questions (according to the official Magento Study Guide).
 * Review Swift Otter guide for each of these sections
