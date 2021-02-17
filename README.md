@@ -34,19 +34,19 @@ This exam validates the skills and knowledge needed to customize Magento 2 in th
 
 Work through Swift Otter (and other learning resources) in this order:
 
-| Topic                                             | Proportion of Questions | 2021-01-11                  | 2021-02-10 | 2021-02-24 | 2021-03-03 |
+| Topic                                             | Proportion of Questions | 2021-01-11                  | 2021-02-10 | 2021-02-17 | 2021-03-03 |
 |---------------------------------------------------|-------------------------|-----------------------------|------------|------------|------------|
-| Overall                                           | 100%                    | 75% (45% chance of passing) | 66% (47%)  |            |            |
-| Customizing the Catalog                           | 12%                     | 69%                         | 37.5%      |            |            |
-| Customizing the Checkout Process                  | 13%                     | 75%                         | 25%        |            |            |
-| Working with Databases in Magento                 | 7%                      | 67%                         | 61.11%     |            |            |
-| Request Flow Processing                           | 12%                     | 70%                         | 70%        |            |            |
-| Magento Architecture and Customization Techniques | 18%                     | 100%                        | 75%        |            |            |
-| Customizing the Magento UI                        | 10%                     | 100%                        | 83.33%     |            |            |
-| Customer Management                               | 5%                      | 100%                        | 83.33%     |            |            |
-| Developing with Adminhtml                         | 10%                     | 69%                         | 91.67%     |            |            |
-| Using the Entity-Attribute-Value (EAV) Model      | 8%                      | 50%                         | 100%       |            |            |
-| Sales Operations                                  | 5%                      | 100%                        | 100%       |            |            |
+| Overall                                           | 100%                    | 75% (45% chance of passing) | 66% (47%)  | 68% (51%)  |            |
+| Customizing the Catalog                           | 12%                     | 69%                         | 37.5%      | 66.67%           |            |
+| Customizing the Checkout Process                  | 13%                     | 75%                         | 25%        | 66.67%           |            |
+| Working with Databases in Magento                 | 7%                      | 67%                         | 61.11%     | 33.33%           |            |
+| Request Flow Processing                           | 12%                     | 70%                         | 70%        | 100%           |            |
+| Magento Architecture and Customization Techniques | 18%                     | 100%                        | 75%        | 50%           |            |
+| Customizing the Magento UI                        | 10%                     | 100%                        | 83.33%     | 75%           |            |
+| Customer Management                               | 5%                      | 100%                        | 83.33%     | 75%           |            |
+| Developing with Adminhtml                         | 10%                     | 69%                         | 91.67%     | 54.17%           |            |
+| Using the Entity-Attribute-Value (EAV) Model      | 8%                      | 50%                         | 100%       | 100%           |            |
+| Sales Operations                                  | 5%                      | 100%                        | 100%       | 66.67%           |            |
 
 ### Study framework
 
